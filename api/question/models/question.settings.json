@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "questions",
+  "info": {
+    "name": "question",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false,
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "text": {
+      "type": "text"
+    },
+    "a": {
+      "type": "string",
+      "required": true
+    },
+    "b": {
+      "type": "string",
+      "required": true
+    },
+    "c": {
+      "type": "string",
+      "required": true
+    },
+    "answer": {
+      "type": "string",
+      "private": true,
+      "required": true
+    },
+    "quizzes": {
+      "via": "questions",
+      "collection": "quiz",
+      "dominant": true
+    },
+    "d": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "my_uploads",
+  "info": {
+    "name": "myUpload"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "path_utl": {
+      "type": "string"
+    }
+  }
+}
